@@ -11,9 +11,9 @@ module.exports = {
 
         // List of phrases to respond with
         var phrases = [
-            '!tipaus ' + message.author.id + ' 0.25'
+            '!tipaus <@' + message.author.id + '> 0.25'
         ];
 
-        message.reply(phrases[Math.floor(Math.random()*phrases.length)]); // Replies to the user with a random phrase
+        message.channel.send(phrases); // Replies to the user with a random phrase
     },
 };
